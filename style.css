@@ -1,0 +1,118 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    text-align: center;
+    background-color: #f9f9fb;
+}
+
+h1{
+    color: #071236;
+    font-size: 60px;
+    font-family: "Black Ops One", system-ui;
+    margin-top: 10px;
+}
+#x-turn, #o-turn{
+    border: 3px solid #000000;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 20px;
+    
+}
+.toggleBackground{
+    background-color: #fa081c;
+    color: #ffffff;
+}
+
+.container{
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.game{
+    height: 60vmin;
+    width:60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vmin;
+}
+.box{
+    height: 18vmin;
+    width: 18vmin;
+    border-radius: 1rem;
+    border: none;
+    font-size: 8vmin;
+    color:rgb(244, 242, 242);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: rgb(2, 2, 49);
+    font-family: "Black Ops One", system-ui;
+    font-size: 3rem;
+    font-weight: bolder;
+}
+#reset{
+    padding: 1rem;
+    font-size: 1.25rem;
+    background-color: #0d0945;
+    color: white;
+    border-radius: 1rem;
+    border: none;
+    font-family: "Black Ops One", system-ui;
+}
+
+
+
+#newbtn{
+    padding: 1rem;
+    font-size: 1.25rem;
+    background-color: #040404;
+    color: white;
+    border-radius: 1rem;
+    border: none;
+    font-family: "Black Ops One", system-ui;
+}
+
+#reset:active, 
+#newbtn:active{
+    transform: scale(0.9);
+    background: linear-gradient(45deg, #a19cc5, #a5bce8);
+}
+
+#msg{
+    color: #f6eded;
+    font-family: "Black Ops One", system-ui;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.msg-container{
+    height: 100vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.msg-container img{
+    width: 100px;
+}
+
+.message-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 20px;
+    border-radius: 10px;
+    background:linear-gradient(45deg, #05011b, #0d0b5f);
+}
+.hide{
+    display: none;
+}
