@@ -11,9 +11,17 @@ body{
 
 h1{
     color: #071236;
-    font-size: 60px;
+    font-size: 50px;
     font-family: "Black Ops One", system-ui;
     margin-top: 10px;
+}
+
+.turns{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
 }
 #x-turn, #o-turn{
     border: 3px solid #000000;
@@ -115,4 +123,10 @@ h1{
 }
 .hide{
     display: none;
+}
+
+@media screen and (min-width: 250px){
+    .msg-container{
+        height: 100vh;
+    }
 }

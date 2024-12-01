@@ -9,7 +9,6 @@ let xTurn = document.querySelector("#x-turn");
 let oTurn = document.querySelector("#o-turn");
 let turnO = true;
 
-oTurn.classList.remove('toggleBackground');
 xTurn.classList.remove('toggleBackground');
 
 const winPatterns = [
@@ -24,7 +23,7 @@ const winPatterns = [
 ];
 
 const resetGame = () => {
-    oTurn.classList.remove('toggleBackground');
+    oTurn.classList.add('toggleBackground');
     xTurn.classList.remove('toggleBackground');
     turnO = true;
     count = 0;
@@ -42,13 +41,13 @@ boxes.forEach((box) => {
 
         if (turnO) {
             box.innerText = 'O';
-            oTurn.classList.add('toggleBackground');
-            xTurn.classList.remove('toggleBackground');
+            oTurn.classList.remove('toggleBackground');
+            xTurn.classList.add('toggleBackground');
             turnO = false;
         } else {
             box.innerText = 'X';
-            xTurn.classList.add('toggleBackground');
-            oTurn.classList.remove('toggleBackground');
+            xTurn.classList.remove('toggleBackground');
+            oTurn.classList.add('toggleBackground');
             turnO = true;
         }
      
